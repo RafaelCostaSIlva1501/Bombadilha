@@ -223,7 +223,7 @@ main {
     }
 
     100% {
-        transform: scale(1) translateX(calc(120% - 100px));
+        transform: scale(1) translateX(calc(135% - 100px));
         filter: blur(0px);
     }
 }
@@ -234,7 +234,7 @@ main {
     }
     
     100% {
-        transform: scale(1) translateX(calc(-120% - -100px));
+        transform: scale(1) translateX(calc(-135% - -100px));
         filter: blur(0px);
     }
 }
