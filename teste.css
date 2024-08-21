@@ -323,7 +323,7 @@ footer a:hover {
 }
 
 footer .copyright {
-    padding: 10px 50px 50px 20px;
+    padding: 50px 10px 50px 10px;
     background-color: var(--cor01);
     text-align: center;
 }
