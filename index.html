@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bombadilha FC</title>
+
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+
+        <link rel="stylesheet" href="teste.css" />
+    </head>
+    <body>
+        <header>
+            <img src="img/bombadilha-logo.jpg" alt="Bombadilha logo oficial" />
+
+            <button>
+                <span class="material-symbols-outlined"> menu </span>
+            </button>
+        </header>
+
+        <main>
+            <div class="container-time">
+                <img src="img/bombadilha-time.jpeg" alt="Time" />
+            </div>
+
+            <div class="container-title">
+                <p>
+                    BOMBA<span style="color: #ac44f2">DILHA</span> - FUTEBOL
+                    CLUBE
+                </p>
+                <p>2024</p>
+            </div>
+
+            <div class="container-btn-contact">
+                <a
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=+5511958091095&text=QUERO PATROCINAR O BOMBADILHA!!!
+                "
+                    ><button>PATROCINAR</button></a
+                >
+            </div>
+        </main>
+
+        <section id="about">
+            <div>
+                <h2>Quem somos?</h2>
+                <p>
+                    O Bombadilha Futebol Clube é um time de futsal amador
+                    fundado em 2024, composto por um grupo apaixonado pelo
+                    esporte. Desde o início, o
+                    Bombadilha FC se destacou pela determinação e espírito de
+                    equipe, unindo jogadores que compartilham o amor pelo
+                    futebol e o desejo de competir. Embora jovem, o time já
+                    demonstra um forte compromisso com a excelência, buscando
+                    sempre evoluir e deixar sua marca no cenário do futsal
+                    amador. Com energia, talento e união, o Bombadilha FC está
+                    pronto para enfrentar desafios e construir uma história de
+                    sucesso e amizade no esporte.
+                </p>
+            </div>
+        </section>
+
+        <section id="us">
+            <h2>NOSSOS JOGADORES</h2>
+
+            <div class="container-btn-players">
+                <button onclick="changePlayer('sub')">
+                    <span class="material-symbols-outlined">
+                        chevron_left
+                    </span>
+                </button>
+
+                <div class="container-players">
+                    <img class="player" src="" alt="" />
+                    <img class="player" src="" alt="" />
+                    <img class="player" src="" alt="" />
+                </div>
+
+                <button onclick="changePlayer('add')">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
