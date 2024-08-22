@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Estilização Geral */
 body {
     margin: 0;
@@ -26,31 +30,7 @@ body {
     font-family: "Roboto";
 }
 
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
 
-    background: var(--cor01);
-}
-
-header img {
-    width: 60px;
-    border-radius: 50%;
-}
-
-header button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-header .material-symbols-outlined {
-    font-size: 32px;
-    color: white;
-}
 
 /* Main */
 main {

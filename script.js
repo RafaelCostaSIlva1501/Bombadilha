@@ -1,3 +1,8 @@
+// Abre e fecha o menu inicial
+document.getElementById("btnMenu").addEventListener("click", () => {
+    document.getElementById("menu").classList.toggle("open");
+});
+
 let playerIndex = 1;
 
 const player = document.querySelectorAll(".player");
