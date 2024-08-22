@@ -1,0 +1,51 @@
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Container do Time */
+.container-time img {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+/* Título */
+.container-title p:first-child {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+.container-title p:first-child span {
+    color: var(--cor05);
+}
+
+.container-title p:last-child {
+    font-size: 24px;
+    margin-top: 10px;
+    color: var(--cor04);
+}
+
+/* Botão de Patrocínio */
+.container-btn-contact button {
+    background-color: var(--cor05);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.container-btn-contact button:hover {
+    background-color: var(--cor04);
+}

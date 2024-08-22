@@ -20,65 +20,76 @@
         />
 
         <style>
+            /* Importando fonte */
             @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-/* Definindo a paleta de cores */
-:root {
-    --cor01: #0d0d0d;
-    --cor02: #0f50a6;
-    --cor03: #2155bf;
-    --cor04: #ab66d9;
-    --cor05: #ac44f2d2;
-    --cor06: #4b1c8c;
-    --cor07: #311559;
-}
+            /* Paleta de cores */
+            :root {
+                --cor01: #0d0d0d;
+                --cor02: #0f50a6;
+                --cor03: #2155bf;
+                --cor04: #ab66d9;
+                --cor05: #ac44f2d2;
+                --cor06: #4b1c8c;
+                --cor07: #311559;
+            }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+            /* Configurações gerais */
+            * {
+                margin: 0;
+                padding: 0;
 
-a {
-    text-decoration: none;
-}
+                box-sizing: border-box;
+                font-family: "Roboto";
+            }
 
-/* Estilização Geral */
-body {
-    margin: 0;
-    font-family: "Arial", sans-serif;
-    background-color: var(--cor01); /* Cor de fundo do site */
-    color: white; /* Cor do texto padrão */
-    font-family: "Roboto";
-}
+            /* Reset de elementos <a> */
+            a {
+                text-decoration: none;
+            }
+
+            /* Estilização do <body> */
+            body {
+                background-color: var(--cor01);
+            }
         </style>
 
-        <!---->
-        <link rel="stylesheet" href="style/header.css">
+        <!-- Estilos do cabeçalho -->
+        <link rel="stylesheet" href="style/header.css" />
 
-        <!---->
+        <!-- Estilos da sessão -->
         <link rel="stylesheet" href="teste.css" />
 
-        <!---->
+        <!-- Estilos da sessão "início" -->
+        <link rel="stylesheet" href="style/home.css" />
 
+        <!-- Estilos da sessão "sobre" -->
+        <link rel="stylesheet" href="style/about.css" />
 
-        <!---->
+        <!-- Estilos da sessão "elenco" -->
+        <link rel="stylesheet" href="style/us.css" />
 
+        <!-- Estilos da sessão "patrocinadores" -->
+        <link rel="stylesheet" href="style/sponsors.css" />
 
-        <!---->
+        <!-- Estilos da sessão "contato" -->
+        <link rel="stylesheet" href="style/contact.css" />
 
-
-        <!---->
+        <link rel="stylesheet" href="style/footer.css" />
     </head>
     <body>
         <header>
             <div>
-                <img src="img/bombadilha-logo.png" alt="Bombadilha logo oficial" />
+                <img
+                    src="img/bombadilha-logo.png"
+                    alt="Bombadilha logo oficial"
+                />
                 <button>
-                    <span class="material-symbols-outlined" id="btnMenu"> menu </span>
+                    <span class="material-symbols-outlined" id="btnMenu">
+                        menu
+                    </span>
                 </button>
             </div>
-
 
             <!--Menu de navegação-->
             <nav id="menu">
@@ -190,62 +201,58 @@ body {
             </a>
         </section>
 
-        <footer  id="contact">
-            <div class="social-media">
-                <p>NOSSAS REDES</p>
-                <hr />
-                <div class="social-media-img">
-                    <a
-                        target="_blank"
-                        href="https://api.whatsapp.com/send?phone=+5511958091095&text=Olá"
-                        ><img
-                            src="img/whatsapp-logo.png"
-                            alt="Whatsapp Bombadilha"
-                    /></a>
+        <section id="contact">
+            <p>NOSSAS REDES</p>
+            <hr />
+            <div class="social-media-img">
+                <a
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=+5511958091095&text=Olá"
+                    ><img src="img/whatsapp-logo.png" alt="Whatsapp Bombadilha"
+                /></a>
 
-                    <a href="https://www.instagram.com/bombadilhafc/"
-                        ><img
-                            src="img/instagram-logo.png"
-                            alt="Instagram Bombadilha"
-                    /></a>
-                </div>
-
-                <p>CRÉDITOS</p>
-                <hr />
-                <p>
-                    Fotografia:
-                    <a
-                        href="https://www.instagram.com/varzea_vive_fotografia/"
-                        target="_blank"
-                        >Vinicius Buck Scapucini - Fotógrafo Esportivo</a
-                    >
-                </p>
-
-                <p>
-                    Design das fotos:
-                    <a
-                        href="https://www.instagram.com/quitto.designer/"
-                        target="_blank"
-                        >Pablo Quitto</a
-                    >
-                </p>
+                <a href="https://www.instagram.com/bombadilhafc/"
+                    ><img
+                        src="img/instagram-logo.png"
+                        alt="Instagram Bombadilha"
+                /></a>
             </div>
 
-            <div class="copyright">
-                <p>
-                    Bombadilha | Futebol Clube &copy; 2024 - Todos os direitos
-                    reservados
-                </p>
+            <p>CRÉDITOS</p>
+            <hr />
+            <p>
+                Fotografia:
+                <a
+                    href="https://www.instagram.com/varzea_vive_fotografia/"
+                    target="_blank"
+                    >Vinicius Buck Scapucini - Fotógrafo Esportivo</a
+                >
+            </p>
 
-                <p>
-                    Desenvolvido:
-                    <a
-                        href="https://rafaelcostasilva1501.github.io/Portfolio/"
-                        target="_blank"
-                        >rafael1501.contato@gmail.com</a
-                    >
-                </p>
-            </div>
+            <p>
+                Design das fotos:
+                <a
+                    href="https://www.instagram.com/quitto.designer/"
+                    target="_blank"
+                    >Pablo Quitto</a
+                >
+            </p>
+        </section>
+
+        <footer>
+            <p>
+                Bombadilha | Futebol Clube &copy; 2024 - Todos os direitos
+                reservados
+            </p>
+
+            <p>
+                Desenvolvido:
+                <a
+                    href="https://rafaelcostasilva1501.github.io/Portfolio/"
+                    target="_blank"
+                    >rafael1501.contato@gmail.com</a
+                >
+            </p>
         </footer>
 
         <script src="script.js"></script>

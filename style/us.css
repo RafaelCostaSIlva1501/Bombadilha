@@ -1,0 +1,112 @@
+#us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 50px;
+
+    height: max-content;
+    padding: 10px;
+}
+
+#us h2 {
+    font-size: 30px;
+    text-align: center;
+    color: var(--cor05);
+}
+
+#us .container-players {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: hidden;
+}
+
+#us .container-players img {
+    width: 70%;
+    max-width: 410px;
+}
+
+#us .container-players img:nth-child(1),
+#us .container-players img:nth-child(3) {
+    transform: scale(70%);
+    filter: blur(5px);
+}
+
+#us .container-btn-players {
+    position: relative;
+}
+
+#us .container-btn-players button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+
+    background: none;
+    border: none;
+    border-radius: 50%;
+
+    transition: background-color 0.3s;
+
+    cursor: pointer;
+
+    z-index: 10;
+}
+
+#us .container-btn-players button:hover {
+    background-color: #ffffff4d;
+}
+
+#us .container-btn-players button:first-child {
+    left: 20px; /* Posiciona o primeiro botão à esquerda */
+}
+
+#us .container-btn-players button:last-child {
+    right: 20px; /* Posiciona o último botão à direita */
+}
+
+#us .container-btn-players button span {
+    text-align: center;
+    color: white;
+}
+
+.rightPlayer {
+    animation: rightPlayer 0.5s;
+}
+
+.leftPlayer {
+    animation: leftPlayer 0.5s;
+}
+
+@keyframes rightPlayer {
+    0% {
+        transform: scale(0.7) translateX(-50px);
+    }
+
+    100% {
+        transform: scale(1) translateX(calc(135% - 100px));
+        filter: blur(0px);
+    }
+}
+
+@keyframes leftPlayer {
+    0% {
+        transform: scale(0.7) translateX(-50px);
+    }
+
+    100% {
+        transform: scale(1) translateX(calc(-135% - -100px));
+        filter: blur(0px);
+    }
+}

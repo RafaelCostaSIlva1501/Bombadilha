@@ -1,0 +1,26 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor07);
+    color: var(--cor05);
+
+    gap: 10px;
+
+    padding: 50px 50px 50px 20px;
+}
+
+#contact hr {
+    border: 1px solid var(--cor05);
+}
+
+#contact img {
+    width: 40px;
+}
+
+#contact a {
+    color: var(--cor04);
+}
+
+#contact a:hover {
+    color: var(--cor05);
+}

@@ -1,0 +1,20 @@
+footer {
+    padding: 10px 10px 50px 10px;
+    background-color: var(--cor01);
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0px;
+
+    color: var(--cor05);
+    font-size: 14px;
+}
+
+footer a {
+    color: var(--cor04);
+}
+
+footer a:hover {
+    color: var(--cor07);
+}
