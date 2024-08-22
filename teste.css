@@ -1,34 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-/* Definindo a paleta de cores */
-:root {
-    --cor01: #0d0d0d;
-    --cor02: #0f50a6;
-    --cor03: #2155bf;
-    --cor04: #ab66d9;
-    --cor05: #ac44f2d2;
-    --cor06: #4b1c8c;
-    --cor07: #311559;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* Estilização Geral */
-body {
-    margin: 0;
-    font-family: "Arial", sans-serif;
-    background-color: var(--cor01); /* Cor de fundo do site */
-    color: white; /* Cor do texto padrão */
-    font-family: "Roboto";
-}
 
 
 
@@ -113,8 +83,11 @@ main {
 #us {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 40px;
+    justify-content: space-around;
+    gap: 50px;
+
+    height: max-content;
+    padding: 10px;
 }
 
 #us h2 {
@@ -136,6 +109,7 @@ main {
 
 #us .container-players img {
     width: 70%;
+    max-width: 410px;
 }
 
 #us .container-players img:nth-child(1),

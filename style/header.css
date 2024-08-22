@@ -6,7 +6,7 @@ header {
     align-items: center;
     padding: 5px;
 
-    background: linear-gradient(90deg, var(--cor07), var(--cor06));
+    background: linear-gradient(90deg, var(--cor07), var(--cor05));
 }
 
 header div {
@@ -14,8 +14,7 @@ header div {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 header img {
@@ -25,7 +24,7 @@ header img {
 
 header button {
     display: flex;
-    
+
     padding: 5px;
 
     background-color: transparent;
@@ -51,7 +50,7 @@ header nav {
 
     overflow: hidden;
 
-    transition: max-height 1s, padding 1s;
+    transition: max-height 1s ease-in-out, padding 1s ease-in-out;
 }
 
 /*Navegação depois de clicar no botão menu*/
@@ -79,4 +78,39 @@ header nav ul li a {
 header nav ul li a:hover {
     background-color: var(--cor05);
     color: white;
+}
+
+/*Estilos de cabeçalho em telas maiores*/
+@media screen and (min-width: 987px) {
+    header {
+        gap: 10px;
+    }
+
+    header nav {
+        max-height: max-content;
+
+        padding: 0px;
+
+        overflow: initial;
+
+        transition: none;
+    }
+
+    header div {
+        justify-content: center;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    header button {
+        display: none;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
