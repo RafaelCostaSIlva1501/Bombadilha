@@ -3,6 +3,7 @@
     padding: 40px 20px;
 }
 
+/* Div dentro da seção "Quem Somos?" */
 #about div {
     padding: 40px 20px;
     background: linear-gradient(145deg, var(--cor06), var(--cor07));
@@ -12,12 +13,14 @@
     box-shadow: 0 4px 8px #00000033;
 }
 
+/* Título (h2) dentro da seção "Quem Somos?" */
 #about h2 {
     font-size: 32px;
     color: var(--cor05);
     margin-bottom: 20px;
 }
 
+/* Parágrafos (p) dentro da seção "Quem Somos?" */
 #about p {
     font-size: 18px;
     line-height: 1.6;

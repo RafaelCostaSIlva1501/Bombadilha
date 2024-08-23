@@ -1,3 +1,4 @@
+/* Estilização da Seção "Contact" */
 #contact {
     display: flex;
     flex-direction: column;
@@ -9,18 +10,22 @@
     padding: 50px 50px 50px 20px;
 }
 
+/* Linha horizontal (hr) dentro da seção "Contact" */
 #contact hr {
     border: 1px solid var(--cor05);
 }
 
+/* Imagens dentro da seção "Contact" */
 #contact img {
     width: 40px;
 }
 
+/* Links (a) dentro da seção "Contact" */
 #contact a {
     color: var(--cor04);
 }
 
+/* Efeito ao passar o mouse sobre os links */
 #contact a:hover {
     color: var(--cor05);
 }

@@ -1,3 +1,4 @@
+/* Estilização da Seção "Us" */
 #us {
     display: flex;
     flex-direction: column;
@@ -8,12 +9,14 @@
     padding: 10px;
 }
 
+/* Títulos (h2) dentro da seção "Us" */
 #us h2 {
     font-size: 30px;
     text-align: center;
     color: var(--cor05);
 }
 
+/* Container de jogadores (container-players) dentro da seção "Us" */
 #us .container-players {
     position: relative;
 
@@ -25,21 +28,25 @@
     overflow-x: hidden;
 }
 
+/* Imagens dentro do container de jogadores */
 #us .container-players img {
     width: 70%;
     max-width: 410px;
 }
 
+/* Estilo específico para a primeira e terceira imagem dentro do container de jogadores */
 #us .container-players img:nth-child(1),
 #us .container-players img:nth-child(3) {
     transform: scale(70%);
     filter: blur(5px);
 }
 
+/* Container para os botões de jogadores */
 #us .container-btn-players {
     position: relative;
 }
 
+/* Botões dentro do container de botões de jogadores */
 #us .container-btn-players button {
     position: absolute;
     top: 50%;
@@ -64,31 +71,38 @@
     z-index: 10;
 }
 
+/* Efeito ao passar o mouse sobre os botões */
 #us .container-btn-players button:hover {
     background-color: #ffffff4d;
 }
 
+/* Primeiro botão no container de botões (alinhado à esquerda) */
 #us .container-btn-players button:first-child {
     left: 20px; /* Posiciona o primeiro botão à esquerda */
 }
 
+/* Último botão no container de botões (alinhado à direita) */
 #us .container-btn-players button:last-child {
     right: 20px; /* Posiciona o último botão à direita */
 }
 
+/* Span dentro dos botões de jogadores */
 #us .container-btn-players button span {
     text-align: center;
     color: white;
 }
 
+/* Animação para jogador à direita */
 .rightPlayer {
     animation: rightPlayer 0.5s;
 }
 
+/* Animação para jogador à esquerda */
 .leftPlayer {
     animation: leftPlayer 0.5s;
 }
 
+/* Animação keyframes para mover o jogador à direita */
 @keyframes rightPlayer {
     0% {
         transform: scale(0.7) translateX(-50px);
@@ -100,6 +114,7 @@
     }
 }
 
+/* Animação keyframes para mover o jogador à esquerda */
 @keyframes leftPlayer {
     0% {
         transform: scale(0.7) translateX(-50px);

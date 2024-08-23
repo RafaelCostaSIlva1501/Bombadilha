@@ -1,9 +1,11 @@
+/* Rodapé */
 footer {
     padding: 10px 10px 50px 10px;
     background-color: var(--cor01);
     text-align: center;
 }
 
+/* Paragráfos do rodapé */
 footer p {
     margin: 10px 0px;
 
@@ -11,10 +13,12 @@ footer p {
     font-size: 14px;
 }
 
+/* Links do rodapé */
 footer a {
     color: var(--cor04);
 }
 
+/* Links ao passar o mouse em cima */
 footer a:hover {
     color: var(--cor07);
 }
