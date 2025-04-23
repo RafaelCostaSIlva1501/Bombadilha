@@ -39,14 +39,14 @@ const player = [
 
 player.map((e) => {
   const icon = createElement("img");
-  icon.src = `../img/players/${e}-icon.jpg`;
+  icon.src = `img/players/${e}-icon.jpg`;
 
   DOM.icons.appendChild(icon);
 
   icon.addEventListener("click", () => {
-    DOM.banner.innerHTML = ""
+    DOM.banner.innerHTML = "";
     const img = createElement("img");
-    img.src = `../img/players/${e}.jpg`;
+    img.src = `img/players/${e}.jpg`;
     DOM.banner.appendChild(img);
   });
 });
