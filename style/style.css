@@ -212,6 +212,15 @@ header button:hover {
   gap: 20px;
 
   padding: 20px;
+
+  background: url(../img/background1.jpg);
+  background-size: cover;
+}
+
+#players > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 #players h2 {
@@ -312,8 +321,9 @@ header button:hover {
 #midias {
   padding: 60px 20px;
 
-  background: url(../img/background1.jpg);
+  background: url(../img/background.jpg);
   background-position: center;
+  background-size: cover;
 
   color: var(--cor05);
 }
@@ -390,5 +400,31 @@ footer a {
 
 /* Links ao passar o mouse em cima */
 footer a:hover {
-  color: var(--cor07);
+  color: var(--cor03);
+}
+
+@media (min-width: 800px) {
+  #players > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: self-start;
+  }
+
+  #players > div div {
+    width: 40%;
+  }
+
+  #players .icons img {
+    width: 70px;
+    height: 70px;
+  
+    border: 2px solid var(--cor03);
+    border-radius: 3px;
+  
+    cursor: pointer;
+  
+    transition: all 0.3s;
+  }
+  
 }
