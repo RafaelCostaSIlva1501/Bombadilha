@@ -161,7 +161,7 @@ header button:hover {
   font-weight: bold;
 }
 
-#home button {
+#home a {
   padding: 12px 24px;
   font-size: 1.1rem;
   background-color: var(--cor04);
@@ -172,7 +172,7 @@ header button:hover {
   transition: all 0.3s;
 }
 
-#home button:hover {
+#home a:hover {
   background-color: var(--cor05);
   transform: scale(1.05);
 }
@@ -298,7 +298,7 @@ header button:hover {
   filter: none;
 }
 
-#sponsors button {
+#sponsors > a:last-of-type {
   padding: 12px 24px;
   background-color: var(--cor04);
   color: white;
@@ -311,7 +311,7 @@ header button:hover {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-#sponsors button:hover {
+#sponsors a:hover {
   background-color: var(--cor06);
   transform: scale(1.05);
 }
@@ -418,13 +418,12 @@ footer a:hover {
   #players .icons img {
     width: 70px;
     height: 70px;
-  
+
     border: 2px solid var(--cor03);
     border-radius: 3px;
-  
+
     cursor: pointer;
-  
+
     transition: all 0.3s;
   }
-  
 }
