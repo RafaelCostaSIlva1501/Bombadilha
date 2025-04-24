@@ -1,18 +1,18 @@
-/* Importando fonte */
+/* Importa a fonte Roboto com variações de peso e itálico */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-/* Paleta de cores */
+/* Paleta de cores do projeto */
 :root {
-  --cor01: #0d0d0d; /* Fundo escuro */
-  --cor02: #2155bf; /* Azul principal */
-  --cor03: #4b1c8c; /* Roxo */
-  --cor04: #ab66d9; /* Lilás */
-  --cor05: #ffffff; /* Branco */
-  --cor06: #e5e5e5; /* Cinza claro */
-  --cor07: #333333; /* Cinza escuro */
+  --cor01: #0d0d0d; /* Fundo escuro principal */
+  --cor02: #2155bf; /* Azul usado como destaque */
+  --cor03: #4b1c8c; /* Roxo escuro (menu, bordas) */
+  --cor04: #ab66d9; /* Lilás (títulos e botões) */
+  --cor05: #ffffff; /* Branco (texto) */
+  --cor06: #e5e5e5; /* Cinza claro (hover, textos secundários) */
+  --cor07: #333333; /* Cinza escuro (background gradiente) */
 }
 
-/* Configurações gerais */
+/* Reset básico de estilo e fonte padrão */
 * {
   margin: 0;
   padding: 0;
@@ -20,22 +20,21 @@
   font-family: "Roboto", sans-serif;
 }
 
-/* Reset de elementos <a> */
+/* Remove sublinhado padrão de links */
 a {
   text-decoration: none;
 }
 
+/* Estilo personalizado para <hr> */
 hr {
   display: block;
-
   width: 80%;
   margin: 0px auto;
-
   border: none;
   border-top: 2px solid var(--cor04);
 }
 
-/* Estilização do <body> */
+/* Estilo base do body: fundo gradiente e texto branco */
 body {
   background: linear-gradient(to bottom, #0d0d0d, #333333);
   color: var(--cor05);
@@ -43,103 +42,92 @@ body {
   line-height: 1.6;
 }
 
-/*-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
+/* -------------------------------- Header -------------------------------- */
 
+/* Estilo principal do cabeçalho */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 20px 30px;
-
   background: linear-gradient(to right, var(--cor03), var(--cor04));
 }
 
+/* Logo dentro do header */
 header img {
   width: 60px;
 }
 
+/* Menu lateral fixo (abre via botão) */
 header nav {
   position: fixed;
   top: 0;
   left: 0;
-
   display: flex;
   flex-direction: column;
   gap: 10px;
-
   width: 0;
   height: 100%;
   padding: 20px 0px;
-
   background-color: var(--cor03);
-
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   z-index: 100;
 }
 
+/* Links do menu lateral */
 header nav a {
-  width: auto;
   padding: 5px 7px;
-
   border-radius: 5px;
-
   color: #f5f5f5;
-  text-decoration: none;
   font-size: 18px;
-
   transition: all 0.3s;
 }
 
+/* Hover nos links do menu */
 header nav a:hover {
   background-color: #f5f5f5;
   color: var(--cor03);
 }
 
+/* Botão de fechar menu (dentro do <nav>) */
 header nav button {
   display: flex;
   width: max-content;
   margin-left: auto;
 }
 
+/* Botão de abrir menu */
 header button {
-  display: flex;
-
   background: none;
   border: none;
-  border-radius: 2px;
-
   color: #f5f5f5;
-
+  border-radius: 2px;
   cursor: pointer;
-
   transition: all 0.3s;
 }
 
+/* Hover no botão do menu */
 header button:hover {
   transform: scale(1.05);
 }
 
-/*-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
+/* -------------------------------- Seção Home -------------------------------- */
 
+/* Container principal da seção home */
 #home {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
-
   min-height: 100vh;
   padding: 40px 20px;
-
-  background: url(../img/background.jpg);
-  background-position: center;
-  background-size: cover;
-
+  background: url(../img/background.jpg) center/cover;
   text-align: center;
 }
 
+/* Imagem principal da home */
 #home img {
   max-width: 90%;
   max-height: 400px;
@@ -148,6 +136,7 @@ header button:hover {
   object-fit: cover;
 }
 
+/* Título principal */
 #home h1 {
   font-size: 2.5rem;
   color: white;
@@ -155,64 +144,66 @@ header button:hover {
   letter-spacing: 2px;
 }
 
+/* Subtítulo / destaque */
 #home span {
   font-size: 1.2rem;
-  color: var(--cor04); /* roxo claro */
+  color: var(--cor04);
   font-weight: bold;
 }
 
+/* Botão da home */
 #home a {
   padding: 12px 24px;
-  font-size: 1.1rem;
   background-color: var(--cor04);
   border: none;
   border-radius: 8px;
   color: white;
+  font-size: 1.1rem;
   cursor: pointer;
   transition: all 0.3s;
 }
 
+/* Hover no botão da home */
 #home a:hover {
   background-color: var(--cor05);
   transform: scale(1.05);
 }
 
-/*-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
+/* -------------------------------- Seção About -------------------------------- */
 
 #about {
   padding: 60px 20px;
-
   color: white;
   text-align: center;
 }
 
+/* Título da seção */
 #about h2 {
-  font-size: 2.2rem;
-  color: var(--cor04); /* Roxo claro */
   margin-bottom: 20px;
+  color: var(--cor04);
+  font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
+/* Parágrafo centralizado */
 #about p {
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 10px;
+  color: #e0e0e0;
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #e0e0e0;
   font-weight: 300;
-  padding: 0 10px;
 }
 
-/*-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
+/* -------------------------------- Seção Players -------------------------------- */
 
 #players {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
   padding: 20px;
-
   background: url(../img/background1.jpg);
   background-size: cover;
 }
@@ -223,15 +214,17 @@ header button:hover {
   gap: 20px;
 }
 
+/* Título da seção */
 #players h2 {
-  font-size: 2.2rem;
-  color: var(--cor04); /* Roxo claro */
   margin-bottom: 20px;
+  color: var(--cor04);
+  font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
 }
 
+/* Ícones dos jogadores */
 #players .icons {
   display: flex;
   justify-content: center;
@@ -242,43 +235,40 @@ header button:hover {
 #players .icons img {
   width: 50px;
   height: 50px;
-
   border: 2px solid var(--cor03);
   border-radius: 3px;
-
   cursor: pointer;
-
   transition: all 0.3s;
 }
 
+/* Hover nos ícones */
 #players .icons img:hover {
   transform: scale(1.05);
   border-color: var(--cor04);
 }
 
+/* Imagem de banner opcional */
 #players .banner img {
   display: block;
-
   width: 300px;
   margin: 0 auto;
 }
 
-/*-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
+/* -------------------------------- Seção Patrocinadores -------------------------------- */
 
 #sponsors {
   padding: 20px;
-
   color: white;
 }
 
 #sponsors h2 {
   border-bottom: 2px solid var(--cor04);
-
   color: var(--cor04);
   font-size: 2rem;
   letter-spacing: 2px;
 }
 
+/* Container de patrocinadores */
 #sponsors div {
   display: flex;
   align-items: center;
@@ -286,69 +276,63 @@ header button:hover {
   margin: 30px 0px;
 }
 
+/* Logos */
 #sponsors img {
   width: 100px;
-  height: auto;
   filter: brightness(0) invert(1);
   transition: all 0.3s ease;
 }
 
+/* Hover nos logos */
 #sponsors img:hover {
   transform: scale(1.1);
   filter: none;
 }
 
+/* Botão final da seção */
 #sponsors > a:last-of-type {
   padding: 12px 24px;
   background-color: var(--cor04);
-  color: white;
-  border: none;
   border-radius: 5px;
+  color: white;
   font-weight: bold;
-  letter-spacing: 1px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: all 0.3s;
 }
 
-#sponsors a:hover {
+/* Hover do botão */
+#sponsors > a:last-of-type:hover {
   background-color: var(--cor06);
-  transform: scale(1.05);
+  color: var(--cor04);
 }
 
-/*-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
+/* -------------------------------- Seção Mídias -------------------------------- */
 
 #midias {
   padding: 60px 20px;
-
-  background: url(../img/background.jpg);
-  background-position: center;
-  background-size: cover;
-
+  background: url(../img/background.jpg) center/cover;
   color: var(--cor05);
 }
 
+/* Título da seção */
 #midias h2 {
   margin-bottom: 30px;
   padding-bottom: 10px;
-
   border-bottom: 2px solid var(--cor04);
-
   color: var(--cor04);
   font-size: 2rem;
-
-  letter-spacing: 2px;
-
   text-transform: uppercase;
 }
 
+/* Container de mídias (ícones) */
 #midias div {
   display: flex;
   gap: 10px;
-
   margin-bottom: 40px;
 }
 
+/* Ícones das mídias */
 #midias img {
   width: 50px;
   height: 50px;
@@ -360,10 +344,11 @@ header button:hover {
   filter: brightness(1.3);
 }
 
+/* Descrição ou links de mídia */
 #midias p {
-  font-size: 1rem;
-  color: var(--cor06);
   margin-bottom: 10px;
+  color: var(--cor06);
+  font-size: 1rem;
 }
 
 #midias a {
@@ -376,19 +361,17 @@ header button:hover {
   color: var(--cor05);
 }
 
-/*-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~*/
+/* -------------------------------- Rodapé -------------------------------- */
 
-/* Rodapé */
 footer {
   padding: 50px;
   background-color: var(--cor01);
   text-align: center;
 }
 
-/* Paragráfos do rodapé */
+/* Texto do rodapé */
 footer p {
   margin: 10px 0px;
-
   color: var(--cor05);
   font-size: 14px;
 }
@@ -398,14 +381,15 @@ footer a {
   color: var(--cor04);
 }
 
-/* Links ao passar o mouse em cima */
 footer a:hover {
   color: var(--cor03);
 }
 
+/* -------------------------------- Responsividade -------------------------------- */
+
+/* Layout adaptativo para telas grandes */
 @media (min-width: 800px) {
   #players > div {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: self-start;
@@ -418,12 +402,5 @@ footer a:hover {
   #players .icons img {
     width: 70px;
     height: 70px;
-
-    border: 2px solid var(--cor03);
-    border-radius: 3px;
-
-    cursor: pointer;
-
-    transition: all 0.3s;
   }
 }
